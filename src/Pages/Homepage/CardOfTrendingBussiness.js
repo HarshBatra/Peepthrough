@@ -13,11 +13,7 @@ function CardOfTrendingBusiness({business}) {
     type : "Restaurant"
   }
   return (
-        <div key={business.key} className='w-90 flex flex-col border tracking-wider rounded-t-[20px] rounded-b-[30px] bg-white' 
-            style={{
-                "filter": "drop-shadow(10px 5px 5px rgba(0, 0, 0, 0.25))"
-            }}
-        >
+        <div key={business.key} className='w-90 flex flex-col border tracking-wider rounded-t-[20px] rounded-b-[30px] bg-white drop-shadow-[5px_5px_10px_rgba(0,0,0,0.25)]' >
             <div className='basis-3/5 rounded-t-[20px]'>
                <img src={business.img} className=' rounded-t-[20px]' />
             </div>

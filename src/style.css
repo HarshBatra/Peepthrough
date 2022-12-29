@@ -2,14 +2,20 @@
     --primary-blue-color:#13A89E;
 }
 
+
+
+/***** for outlined heading ******/
 .retailHeading{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
 }
+
+/****** our blue to white gradient ****/
 .primaryGradient{
     background: radial-gradient(var(--primary-blue-color) 0%, rgba(19, 168, 158, 0) 100%);
 }
 
+/*** for people talking about us navigation and pagination color **/
 .swiper-pagination-bullet-active{
     background: var(--primary-blue-color);
 }

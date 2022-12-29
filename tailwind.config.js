@@ -24,8 +24,9 @@ module.exports = {
         'xxs':'10px'
       }, 
       spacing:{
-        '90':'22rem',
-        '128':'32rem'
+        '90':'22rem', //352px
+        '100': '25rem', //400px
+        '128':'32rem' //512px
       },
     },
   },
