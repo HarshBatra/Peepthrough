@@ -5,7 +5,7 @@ function CardOfShopkeeperLogin() {
 
     return (
         <div className=''>
-            <div className='w-100 px-14 py-16 rounded-md ' style={{
+            <div className='w-100 px-14 py-16 rounded-[20px] ' style={{
                 background: "linear-gradient(147.38deg, rgba(19, 168, 158, 0.28) 0%, rgba(19, 168, 158, 0) 100%)",
                 boxShadow: "5px 5px 20px 2px #00000040"
              }}>
