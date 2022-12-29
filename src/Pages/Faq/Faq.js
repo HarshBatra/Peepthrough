@@ -3,17 +3,14 @@ import React from 'react'
 const Faq = () =>
 {
     return (
-        <div class='m-10 p-10 grid place-content-center' >
-            <div class='text-center text-6xl text-[#13A89E] font-bold tracking-wider' >
-                Lorem Ipsum Topic
+        <div class='m-10 p-10 grid place-content-center justify-items-center' >
+            <div class='text-center text-6xl text-[#13A89E] font-bold tracking-wider m-5' >
+                FAQ's
             </div>
 
-            <div class='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-yellow-200 via-yellow-400 to-yellow-700 h-[1px]   w-12  content-center ' >
+            <span className='w-44 h-0.5 mt-4 ' style={ { 'background': 'radial-gradient(#13A89E 0%, rgba(19, 168, 158, 0) 100%)', } }></span>
 
-            </div>
-
-
-            <div class='text-justify m-10 p-10 font-medium tracking-wider text-base'>
+            <div class='text-justify m-10 p-10 font-medium tracking-wider text-base font-poppins opacity-80 '>
                 - How is Peepthrough different from any other listing site?
                 <br></br>
 
@@ -56,7 +53,7 @@ const Faq = () =>
             </div>
 
 
-        </div>
+        </div >
     )
 }
 
