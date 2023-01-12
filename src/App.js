@@ -16,8 +16,8 @@ function App() {
   return (
     <>
       <div className="font-poppins">
-        <Navbar />
-          <Router>
+        <Router>
+          <Navbar />
             <Routes>
               <Route path='/' element = { <Home /> } />
               <Route path='/blog' element={ <SingleBlog /> } />
@@ -28,8 +28,8 @@ function App() {
               <Route path='/shopkeeper-login' element = { <ShopkeeperLogin /> } />
               <Route path='/advertise' element = { <Advertise /> } />
             </Routes>
+          <Footer />
         </Router>
-        <Footer />
       </div>
     </>
   );
