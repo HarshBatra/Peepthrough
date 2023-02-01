@@ -2,8 +2,8 @@ import React from "react";
 
 const Faq = () => {
   return (
-    <div class="m-10 p-10 grid place-content-center justify-items-center">
-      <div class="text-center text-6xl text-[#13A89E] font-bold tracking-wider m-5">
+    <div class="md:m-10 p-10 grid place-content-center justify-items-center">
+      <div class="text-center md:text-6xl text-2xl text-[#13A89E] font-bold tracking-wider md:m-5 m-2">
         FAQ's
       </div>
 
@@ -14,7 +14,7 @@ const Faq = () => {
         }}
       ></span>
 
-      <div class="text-justify m-10 p-10 font-medium tracking-wider text-base font-poppins opacity-80 ">
+      <div class="text-justify md:m-10 md:p-10 py-10 md:font-medium font-light md:tracking-wider tracking-wide md:text-base text-sm font-poppins opacity-80 ">
         - How is Peepthrough different from any other listing site?
         <br></br>
         Answer: Peepthrough lets you window shop a market sitting in the luxury
