@@ -10,13 +10,13 @@ function Home() {
   return (
     <>
         <div className="font-poppins">
-            <IntroComp />
-            <CategoriesComp />
-            <RetailComp />
-            <CitySlideshow />
-            <TrendingBusiness />
-            <BlogSlideShow />
-            <OurBlog />
+          <IntroComp />
+          <CategoriesComp />
+          <RetailComp />
+          <CitySlideshow />
+          <TrendingBusiness />
+          <BlogSlideShow />
+          <OurBlog />
         </div>
     </>
   );
