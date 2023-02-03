@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import CardOfUsersLogin from './CardOfUsersLogin';
-import Overlay from './Overlay';
+import DrawerComp from "./DrawerComp"
 
 const Navbar = () => {
   const logo = "./Assets/Images/logo.png"
   return (
     <div className='w-screen flex flex-row shadow-lg h-16 items-center relative z-10'>
         <img className='logo h-8 ml-6' src={logo} alt="logo" />        
-        <div className="nav-items flex flex-row ml-56">
+        <div className="nav-items flex-row ml-56 hidden md:flex">
             <div className="items items-center text-teal-500 flex flex-row gap-x-16">
                 <Link to="/" className='z-50'>Home</Link>
                 <div className='z-50'>Categories</div>
@@ -27,6 +26,7 @@ const Navbar = () => {
                 <div className="ellipse-2 absolute w-[250px] h-[250px] top-[4.5rem] right-[-4rem] rounded-full bg-gradient-to-bl from-teal-500 z-30"></div>          
             </div>
         </div>
+        <DrawerComp />
     </div>
   )
 }
