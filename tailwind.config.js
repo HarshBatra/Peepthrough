@@ -21,6 +21,7 @@ module.exports = {
         poppins:['Poppins'],
       },
       fontSize:{
+        'xs':'12px',
         'xxs':'10px'
       }, 
       spacing:{
