@@ -19,7 +19,7 @@ function CitySlideshow() {
 
   return (
     <>
-      <div className="md:my-16 my-12 md:py-16 py-10 px-6">
+      <div className="md:my-16 my-12 md:py-16 py-10 px-6" id="cities">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-2xl md:text-4xl text-primary-blue tracking-wide text-center ">
             <span className="font-bold">Featured</span> Cities

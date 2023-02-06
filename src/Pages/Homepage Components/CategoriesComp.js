@@ -3,7 +3,7 @@ import CategoriesData from "../../constants/CategoriesData";
 
 function Card(props) {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center" id="categories">
       <div className="rounded-[50%] bg-white cursor-pointer drop-shadow-lg md:h-28 md:w-28 h-16 w-16 mb-4 flex items-center justify-center transition grow">
         <img
           src={props.img}

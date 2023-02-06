@@ -6,9 +6,11 @@ import {
   FaYoutube,
   FaTelegramPlane,
 } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const logo = "./Assets/Images/logo.png";
+  const navigate = useNavigate();
   return (
     <div className="flex overflow-clip md:flex-row flex-col md:px-20 pt-2 md:pt-10 pb-20 w-full md:justify-around justify-center self-center md:text-left text-center items-center md:items-start align-top relative bg-gradient-to-r from-teal-50 via-teal-100 to-teal-50">
       <div className="flex flex-col items-center md:items-start gap-12 mt-8 ">
@@ -87,10 +89,10 @@ const Footer = () => {
           <div className="flex flex-row gap-16 mt-6">
             <div className="flex flex-col gap-3 font-normal text-sm">
               <p className="font-bold text-teal-500">Company</p>
-              <p className="cursor-pointer hover:font-semibold">About Us</p>
-              <p className="cursor-pointer hover:font-semibold">Blog</p>
-              <p className="cursor-pointer hover:font-semibold">FAQs</p>
-              <p className="cursor-pointer hover:font-semibold">Contact</p>
+              <Link className="cursor-pointer hover:font-semibold" to="/about-us">About Us</Link>
+              <Link className="cursor-pointer hover:font-semibold" to="/blog">Blog</Link>
+              <Link className="cursor-pointer hover:font-semibold" to="/faq">FAQs</Link>
+              <Link className="cursor-pointer hover:font-semibold" to="/contact-us">Contact</Link>
             </div>
             <div className="flex flex-col gap-3 font-normal text-sm">
               <p className="font-bold text-teal-500">Support</p>
@@ -101,7 +103,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <button className="flex justify-center items-center text-sm text-white bg-teal-500 rounded-2xl w-60 h-8 shadow-[0px_4px_4px_rgba(0,0,0,0.25)] hover:bg-white hover:text-teal-500">
+            <button className="flex justify-center items-center text-sm text-white bg-teal-500 rounded-2xl w-60 h-8 shadow-[0px_4px_4px_rgba(0,0,0,0.25)] hover:bg-white hover:text-teal-500" onClick={()=>navigate("/shopkeeper-login")}>
               Shopkeeper's Login
             </button>
           </div>

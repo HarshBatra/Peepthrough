@@ -16,6 +16,7 @@ function BlogSlideShow() {
           background:
             "radial-gradient(rgba(19, 168, 158, 0.5) 0%, rgba(19, 168, 158, 0.25) 0.01%, rgba(19, 168, 158, 0) 100%)",
         }}
+        id="testimonials"
       >
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-primary-blue text-center md:text-4xl text-2xl font-normal tracking-wider">
