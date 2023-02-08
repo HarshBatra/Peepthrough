@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { CSSComponents } from './CSSComponents';
+import CancelIcon from '@mui/icons-material/Cancel';
 
-function CardOfUsersLogin() {
+function CardOfUsersLogin({setOpen}) {
 
     return (
-        <div className=''>
-            <div className='w-100 px-14 py-16 rounded-[20px] bg-white text-black' 
+        <div className='relative'>
+            <span className='flex absolute right-6 top-2 text-black cursor-pointer' onClick={()=>setOpen(false)}><CancelIcon /></span>
+            <div className='md:w-100 px-14 py-16 rounded-[20px] bg-white text-black mx-4 w-80' 
             style={{
                 // background: "linear-gradient(147.38deg, rgba(19, 168, 158, 0.28) 0%, rgba(19, 168, 158, 0) 100%)",
                 boxShadow: "5px 5px 20px 2px #00000040"

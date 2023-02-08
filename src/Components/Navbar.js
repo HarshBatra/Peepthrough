@@ -8,7 +8,7 @@ import { Backdrop } from '@mui/material';
 const Navbar = () => {
   const logo = "./Assets/Images/logo.png"
   const navigate = useNavigate();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className='w-screen flex flex-row shadow-lg h-16 items-center relative z-10'>
@@ -32,13 +32,13 @@ const Navbar = () => {
                 <div className="ellipse-2 absolute w-[250px] h-[250px] top-[4.5rem] right-[-4rem] rounded-full bg-gradient-to-bl from-teal-500 z-30"></div>          
             </div>
         </div>
-        <DrawerComp />
+        <DrawerComp setOpen={setOpen} />
         <Backdrop
-          sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+          sx={{ color: '#fff', zIndex: 100}}
           open={open}
-          onClick={()=> setOpen(false)}
+          className="z-40"
         >
-            <CardOfUsersLogin />
+            <CardOfUsersLogin className="z-50" setOpen={setOpen} />
         </Backdrop>
     </div>
   )

@@ -37,7 +37,7 @@ const Footer = () => {
           <FaYoutube className="text-teal-500 transition grow cursor-pointer" />
         </div>
       </div>
-      <div className="z-20 flex flex-col bg-white shadow-[5px_5px_120px_-20px_rgba(0,0,0,0.2)] rounded-[1.5rem] p-10 md:my-2 my-10">
+      <div className="z-[1] flex flex-col bg-white shadow-[5px_5px_120px_-20px_rgba(0,0,0,0.2)] rounded-[1.5rem] p-10 md:my-2 my-10">
         <p className="text-2xl md:text-4xl font-bold">Subscribe to Our</p>
         <p className="text-2xl md:text-4xl font-bold text-teal-500">
           Newsletter
@@ -114,10 +114,10 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="vert-move2 absolute w-[250px] h-[250px] top-[10rem] left-[28rem] rounded-full bg-gradient-to-b from-teal-500 z-10"></div>
-      <div className="vert-move1 absolute w-[300px] h-[300px] top-[-12rem] left-[83rem] rounded-full bg-gradient-to-b from-teal-500 z-10"></div>
-      <div className="vert-move3 absolute w-[250px] h-[250px] top-[20rem] left-[-13rem] rounded-full bg-gradient-to-b from-teal-500 z-10"></div>
-      <div className="vert-move absolute w-[70px] h-[70px] bottom-[10rem] right-[-0.5rem] rounded-full bg-gradient-to-tl from-black z-10"></div>
+      <div className="vert-move2 absolute w-[250px] h-[250px] top-[10rem] left-[28rem] rounded-full bg-gradient-to-b from-teal-500 "></div>
+      <div className="vert-move1 absolute w-[300px] h-[300px] top-[-12rem] left-[83rem] rounded-full bg-gradient-to-b from-teal-500"></div>
+      <div className="vert-move3 absolute w-[250px] h-[250px] top-[20rem] left-[-13rem] rounded-full bg-gradient-to-b from-teal-500"></div>
+      <div className="vert-move absolute w-[70px] h-[70px] bottom-[10rem] right-[-0.5rem] rounded-full bg-gradient-to-tl from-black"></div>
     </div>
   );
 };

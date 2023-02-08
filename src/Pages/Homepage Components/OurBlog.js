@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 
 function OurBlog() {
-  var blogs = BlogsData;
+  var blogs = BlogsData.slice(0, 3);
   const navigate = useNavigate();
 
   return (
@@ -56,7 +56,7 @@ function OurBlog() {
           })}
         </div>
         <div className="flex justify-center items-center mt-10">
-          <button className="px-6 py-2 text-primary-blue border-[1px] border-primary-blue text-xl font-medium  rounded-md hover:bg-primary-blue hover:text-white ease-in duration-300" onClick={()=>navigate("/blog")}>
+          <button className="px-6 py-2 text-primary-blue border-[1px] border-primary-blue text-xl font-medium  rounded-md hover:bg-primary-blue hover:text-white ease-in duration-300" onClick={()=>navigate("/all-blogs")}>
             View More
           </button>
         </div>

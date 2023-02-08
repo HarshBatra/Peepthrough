@@ -12,12 +12,15 @@ import "./input.css";
 import "./animation.css";
 import Contact from "./Pages/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Allblogs from "./Pages/Allblogs";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <>
       <div className="font-poppins">
         <Router>
+          <ScrollToTop />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -28,6 +31,7 @@ function App() {
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/shopkeeper-login" element={<ShopkeeperLogin />} />
             <Route path="/advertise" element={<Advertise />} />
+            <Route path="/all-blogs" element={<Allblogs />} />
           </Routes>
           <Footer />
         </Router>
