@@ -9,7 +9,7 @@ function Allblogs() {
 
     return (
         <div>
-            <div className="mx-20 my-16" id="blog">
+            <div className="md:mx-20 my-16 mx-0">
                 <div className="flex flex-col justify-center items-center mb-10">
                     <h1 className="text-primary-blue text-center md:text-5xl text-4xl font-bold tracking-wider">
                         Our Blog

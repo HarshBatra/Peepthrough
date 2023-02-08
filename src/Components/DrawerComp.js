@@ -17,26 +17,26 @@ const DrawerComp = ({setOpen}) => {
     {
       name:"Home",
       icon:<Home />,
-      href:"#"
+      href:"/"
     }, 
     {
       name:"Categories",
       icon:<Category />,
-      href:"#categories"
+      href:"/#categories"
     },
     {
       name:"Cities",
       icon:<LocationCity />,
-      href:"#cities"
+      href:"/#cities"
     },{
       name:"Testimonials",
       icon:<ChatBubble />,
-      href:"#testimonials"
+      href:"/#testimonials"
     },
     {
       name:"Blog",
       icon:<Book />,
-      href:"#blog"
+      href:"/#blog"
     }
   ];
 

@@ -16,10 +16,10 @@ const Navbar = () => {
         <div className="nav-items flex-row ml-56 hidden md:flex">
             <div className="items items-center text-teal-500 flex flex-row gap-x-16">
                 <Link to="/" className='z-50'>Home</Link>
-                <a href="#categories" className='z-50'>Categories</a>
-                <a href="#cities" className='z-50'>Cities</a>
-                <a href="#testimonials" className='z-50'>Testimonials</a>
-                <a href="#blog" className='z-50'>Blog</a>
+                <a href="/#categories" className='z-50'>Categories</a>
+                <a href="/#cities" className='z-50'>Cities</a>
+                <a href="/#testimonials" className='z-50'>Testimonials</a>
+                <a href="/#blog" className='z-50'>Blog</a>
             </div>
             <div className="login flex flex-row ml-16 gap-x-8">
                 <button className="bg-teal-500 text-white w-32 h-8 px-4 border border-teal-500 rounded z-50 hover:bg-white hover:text-teal-500" onClick={()=>setOpen(!open)}>
