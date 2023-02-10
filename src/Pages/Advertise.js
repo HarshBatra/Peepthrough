@@ -114,8 +114,8 @@ const Advertise = () => {
             <form action="" className="newsletter text-[.8rem] font-semibold">
               <div className="name flex flex-col mt-6 gap-[.4rem]">
                 <p> About Business </p>
-                <input
-                  className="bg-[rgba(255, 255, 255, 0.5)] rounded-2xl h-60 pl-4 -mx-2 w-full"
+                <textarea rows="100" cols="30"
+                  className="bg-[rgba(255, 255, 255, 0.5)] rounded-2xl h-60 p-2 -mx-2 w-full resize-none"
                   type="text"
                 />
               </div>

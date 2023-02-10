@@ -1,11 +1,15 @@
 import React from "react";
 import BlogsData from "../../constants/BlogsData";
+import { useNavigate } from "react-router-dom";
+
 
 function OurBlog() {
-  var blogs = BlogsData;
+  var blogs = BlogsData.slice(0, 3);
+  const navigate = useNavigate();
+
   return (
     <>
-      <div className="mx-20 my-16">
+      <div className="mx-20 my-16" id="blog">
         <div className="flex flex-col justify-center items-center mb-10">
           <h1 className="text-primary-blue text-center md:text-5xl text-4xl font-bold tracking-wider">
             Our Blog
@@ -52,7 +56,7 @@ function OurBlog() {
           })}
         </div>
         <div className="flex justify-center items-center mt-10">
-          <button className="px-6 py-2 text-primary-blue border-[1px] border-primary-blue text-xl font-medium  rounded-md hover:bg-primary-blue hover:text-white ease-in duration-300">
+          <button className="px-6 py-2 text-primary-blue border-[1px] border-primary-blue text-xl font-medium  rounded-md hover:bg-primary-blue hover:text-white ease-in duration-300" onClick={()=>navigate("/all-blogs")}>
             View More
           </button>
         </div>
