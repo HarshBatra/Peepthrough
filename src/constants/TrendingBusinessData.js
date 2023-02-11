@@ -3,60 +3,66 @@ module.exports = [
         key:1,
         name: "Yellow Door cafe",
         img:"./Assets/Images/TrendingBusiness.jpg",
-        location: "New Delhi",
+        city: "New Delhi",
         rating : 4.6,
         reviews : 21,
-        price : 670,
-        type : "Restaurant"
+        contact : ["+(91)-9650560949", "(011)-9810962664"],
+        type : "Restaurant",
+        location:"SG-23, Galleria Market, DLF City Phase IV, Gurugram, Haryana,122009"
     },
     {
         key:2,
         name: "Yellow Door cafe",
         img:"./Assets/Images/TrendingBusiness.jpg",
-        location: "New Delhi",
+        city: "New Delhi",
         rating : 4.6,
         reviews : 21,
-        price : 670,
-        type : "Restaurant"
+        contact : ["+(91)-9650560949", "(011)-9810962664"],
+        type : "Restaurant",
+        location:"SG-23, Galleria Market, DLF City Phase IV, Gurugram, Haryana,122009"
     },
     {
         key:3,
         name: "Yellow Door cafe",
         img:"./Assets/Images/TrendingBusiness.jpg",
-        location: "New Delhi",
+        city: "New Delhi",
         rating : 4.6,
         reviews : 21,
-        price : 670,
-        type : "Restaurant"
+        contact : ["+(91)-9650560949", "(011)-9810962664"],
+        type : "Restaurant",
+        location:"SG-23, Galleria Market, DLF City Phase IV, Gurugram, Haryana,122009"
     },
     {
         key:4,
         name: "Yellow Door cafe",
         img:"./Assets/Images/TrendingBusiness.jpg",
-        location: "New Delhi",
+        city: "New Delhi",
         rating : 4.6,
         reviews : 21,
-        price : 670,
-        type : "Restaurant"
+        contact : ["+(91)-9650560949", "(011)-9810962664"],
+        type : "Restaurant",
+        location:"SG-23, Galleria Market, DLF City Phase IV, Gurugram, Haryana,122009"
     },
     {
         key:5,
         name: "Yellow Door cafe",
         img:"./Assets/Images/TrendingBusiness.jpg",
-        location: "New Delhi",
+        city: "New Delhi",
         rating : 4.6,
         reviews : 21,
-        price : 670,
-        type : "Restaurant"
+        contact : ["+(91)-9650560949", "(011)-9810962664"],
+        type : "Restaurant",
+        location:"SG-23, Galleria Market, DLF City Phase IV, Gurugram, Haryana,122009"
     },
     {
         key:6,
         name: "Yellow Door cafe",
         img:"./Assets/Images/TrendingBusiness.jpg",
-        location: "New Delhi",
+        city: "New Delhi",
         rating : 4.6,
         reviews : 21,
-        price : 670,
-        type : "Restaurant"
+        contact : ["+(91)-9650560949", "(011)-9810962664"],
+        type : "Restaurant",
+        location:"SG-23, Galleria Market, DLF City Phase IV, Gurugram, Haryana,122009"
     },
 ];  

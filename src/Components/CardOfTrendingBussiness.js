@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, BookmarkBorderOutlined } from "@mui/icons-material";
+import { Star, BookmarkBorderOutlined, Phone, LocationOn } from "@mui/icons-material";
 
 function CardOfTrendingBusiness({ business }) {
   return (
@@ -13,15 +13,20 @@ function CardOfTrendingBusiness({ business }) {
       <div className="basis-2/5 p-4  rounded-b-[30px]">
         <div className="flex justify-between my-2">
           <span className="text-xxs text-light-gray">{business.type}</span>
-          <span className="text-xxs text-light-gray">{business.location}</span>
+          <span className="text-xxs text-light-gray">{business.city}</span>
         </div>
         <div>
-          <h1 className="text-xl text-primary-blue font-semibold mb-2">
+          <h1 className="text-xl text-primary-blue font-semibold mb-4">
             {business.name}
           </h1>
-          <span className="text-primary-light-blue text-sm">
-            Rs. {business.price}
-          </span>
+          <div className="text-primary-light-blue text-xs flex">
+            <Phone sx={{fontSize:"18px"}} /> 
+            <p className="ml-1">{business.contact[0]}</p>
+          </div>
+          <div className="text-primary-light-blue text-xs mt-2 flex mb-4">
+            <LocationOn sx={{fontSize:"18px"}} /> 
+            <p className="ml-1">{business.location.substr(0,Math.min(60,business.location.length))}...</p>
+          </div>
         </div>
         <div className="flex justify-between items-end">
           <div className="text-primary-blue text-sm font-bold">

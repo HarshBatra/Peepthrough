@@ -4,7 +4,7 @@ import { ExpandLess, ExpandMore, StarBorder, Dashboard, Storefront, Book, Lock, 
 import { CSSComponents } from './CSSComponents';
 
 
-function Sidebar() {
+function SidebarAdmin() {
 
     const [openBlog, setOpenBlog] = useState(false);
     const [openMarkets, setOpenMarkets] = useState(false);
@@ -18,8 +18,6 @@ function Sidebar() {
           width: '100%', 
           maxWidth: 360, 
           bgcolor: 'background.paper',
-          // background: "linear-gradient(147.22deg, #13A89E -31.1%, rgba(19, 168, 158, 0) 77.92%)",
-          // color:"white" 
         }}
         className='tracking-wider border'
         component="nav"
@@ -174,4 +172,4 @@ function Sidebar() {
     );
 }
 
-export default Sidebar;
+export default SidebarAdmin;
