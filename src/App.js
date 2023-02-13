@@ -7,6 +7,7 @@ import Faq from "./Pages/Faq";
 import ShopkeeperLogin from "./Pages/ShopkeeperLogin";
 import Advertise from "./Pages/Advertise";
 import Privacy from "./Pages/Privacy";
+import Shop from './Pages/Shops';
 import "./style.css";
 import "./input.css";
 import "./animation.css";
@@ -15,7 +16,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Allblogs from "./Pages/Allblogs";
 import ScrollToTop from "./Components/ScrollToTop";
 
-function App() {
+function App ()
+{
   return (
     <>
       <div className="font-poppins">
@@ -23,15 +25,16 @@ function App() {
           <ScrollToTop />
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<SingleBlog />} />
-            <Route path="/blog/:id" element={<SingleBlog />} />
-            <Route path="/faq" element={<Faq />} />
-            <Route path="/privacy-policy" element={<Privacy />} />
-            <Route path="/contact-us" element={<Contact />} />
-            <Route path="/shopkeeper-login" element={<ShopkeeperLogin />} />
-            <Route path="/advertise" element={<Advertise />} />
-            <Route path="/all-blogs" element={<Allblogs />} />
+            <Route path="/" element={ <Home /> } />
+            <Route path="/blog" element={ <SingleBlog /> } />
+            <Route path="/blog/:id" element={ <SingleBlog /> } />
+            <Route path="/faq" element={ <Faq /> } />
+            <Route path="/privacy-policy" element={ <Privacy /> } />
+            <Route path="/contact-us" element={ <Contact /> } />
+            <Route path="/shopkeeper-login" element={ <ShopkeeperLogin /> } />
+            <Route path="/advertise" element={ <Advertise /> } />
+            <Route path="/all-blogs" element={ <Allblogs /> } />
+            <Route path='/shops' element={ <Shop /> } />
           </Routes>
           <Footer />
         </Router>
