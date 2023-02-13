@@ -1,5 +1,5 @@
 import React from "react";
-import CardOfTrendingBusiness from "./CardOfTrendingBussiness";
+import CardOfTrendingBusiness from "../../Components/CardOfTrendingBussiness";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
