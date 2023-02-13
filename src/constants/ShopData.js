@@ -2,7 +2,7 @@ module.exports = [
     {
         key:1,
         name: "Yellow Door cafe",
-        img:"./Assets/Images/TrendingBusiness.jpg",
+        img:"./Assets/Images/Shop.jpg",
         city: "New Delhi",
         rating : 4.6,
         reviews : 21,
@@ -14,7 +14,7 @@ module.exports = [
     {
         key:2,
         name: "Yellow Door cafe",
-        img:"./Assets/Images/TrendingBusiness.jpg",
+        img:"./Assets/Images/Shop.jpg",
         city: "New Delhi",
         rating : 4.6,
         reviews : 21,
@@ -26,7 +26,7 @@ module.exports = [
     {
         key:3,
         name: "Yellow Door cafe",
-        img:"./Assets/Images/TrendingBusiness.jpg",
+        img:"./Assets/Images/Shop.jpg",
         city: "New Delhi",
         rating : 4.6,
         reviews : 21,
@@ -38,7 +38,7 @@ module.exports = [
     {
         key:4,
         name: "Yellow Door cafe",
-        img:"./Assets/Images/TrendingBusiness.jpg",
+        img:"./Assets/Images/Shop.jpg",
         city: "New Delhi",
         rating : 4.6,
         reviews : 21,
@@ -50,7 +50,7 @@ module.exports = [
     {
         key:5,
         name: "Yellow Door cafe",
-        img:"./Assets/Images/TrendingBusiness.jpg",
+        img:"./Assets/Images/Shop.jpg",
         city: "New Delhi",
         rating : 4.6,
         reviews : 21,
@@ -62,7 +62,7 @@ module.exports = [
     {
         key:6,
         name: "Yellow Door cafe",
-        img:"./Assets/Images/TrendingBusiness.jpg",
+        img:"./Assets/Images/Shop.jpg",
         city: "New Delhi",
         rating : 4.6,
         reviews : 21,

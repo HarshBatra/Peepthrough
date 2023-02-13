@@ -61,7 +61,7 @@ function CitySlideshow() {
                   boxShadow: "10px 20px 30px rgba(0,0,0,0.25)",
                 }}
               >
-                <Link to="/shop">
+                <Link to="/mallsincity">
                   <div className="relative w-full h-full">
                     <img
                       src={city.img}

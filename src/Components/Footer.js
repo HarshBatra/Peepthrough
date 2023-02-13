@@ -90,7 +90,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3 font-normal text-sm">
               <p className="font-bold text-teal-500">Company</p>
               <Link className="cursor-pointer hover:font-semibold" to="/about-us">About Us</Link>
-              <Link className="cursor-pointer hover:font-semibold" to="/blog">Blog</Link>
+              <Link className="cursor-pointer hover:font-semibold" to="/all-blogs">Blog</Link>
               <Link className="cursor-pointer hover:font-semibold" to="/faq">FAQs</Link>
               <Link className="cursor-pointer hover:font-semibold" to="/contact-us">Contact</Link>
             </div>

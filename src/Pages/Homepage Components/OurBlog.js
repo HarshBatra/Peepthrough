@@ -19,7 +19,7 @@ function OurBlog() {
         <div className="flex md:justify-around items-center md:flex-row flex-col">
           {blogs.map((blog, index) => {
             return (
-              <div className="w-80 mb-10" key={index}>
+              <div className="w-80 mb-10 cursor-pointer" key={index} onClick={()=>navigate("/blog")}>
                 <div className="flex flex-col justify-center items-center">
                   <div
                     className="w-80 h-64 overflow-hidden rounded-3xl"

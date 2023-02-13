@@ -143,4 +143,28 @@ module.exports = [
       "Clothing, Footwear, Optician, Jewellery, Books & Toys, Beauty, Stationery / Art",
     availability: "Sunday Closed",
   },
+  {
+    key: 13,
+    name: "Chandni Chowk",
+    img: "./Assets/Images/TrendingBusiness.jpg",
+    location: "New Delhi",
+    rating: 4.6,
+    reviews: 21,
+    desc: "It is the perfect place to shop in. This densely populated market has been around for more than three centuries and was once visited by merchants from Turkey, China and even Holland. You may buy curios and souvenirs from here.",
+    category:
+      "Clothing, Footwear, Optician, Jewellery, Books & Toys, Beauty, Stationery / Art",
+    availability: "Sunday Closed",
+  },
+  {
+    key: 13,
+    name: "Chandni Chowk",
+    img: "./Assets/Images/TrendingBusiness.jpg",
+    location: "New Delhi",
+    rating: 4.6,
+    reviews: 21,
+    desc: "It is the perfect place to shop in. This densely populated market has been around for more than three centuries and was once visited by merchants from Turkey, China and even Holland. You may buy curios and souvenirs from here.",
+    category:
+      "Clothing, Footwear, Optician, Jewellery, Books & Toys, Beauty, Stationery / Art",
+    availability: "Sunday Closed",
+  },
 ];
