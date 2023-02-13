@@ -6,6 +6,7 @@ import CitySlideshow from "./Homepage Components/CitySlideshow";
 import TrendingBusiness from "./Homepage Components/TrendingBusiness";
 import IntroComp from "./Homepage Components/IntroComp";
 
+
 function Home() {
   return (
     <>

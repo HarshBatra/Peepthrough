@@ -1,5 +1,5 @@
 import React from "react";
-import CardOfTrendingBusiness from "./CardOfTrendingBussiness";
+import CardOfTrendingBusiness from "../../Components/CardOfTrendingBussiness";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,7 +8,6 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import TrendingBusinessData from "../../constants/TrendingBusinessData";
 
 function TrendingBusiness() {
-  console.log("TB", TrendingBusinessData);
   var businesses = TrendingBusinessData;
   return (
     <div className="md:my-16 md:mx-14 mx-12 md:px-10 md:py-4">
