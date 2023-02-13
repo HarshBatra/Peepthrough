@@ -4,11 +4,11 @@ import SingleBlog from "./Pages/SingleBlog";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Faq from "./Pages/Faq";
-import Shop from "./Pages/Shop";
+import MallsInCity from "./Pages/MallsInCity";
 import ShopkeeperLogin from "./Pages/ShopkeeperLogin";
 import Advertise from "./Pages/Advertise";
 import Privacy from "./Pages/Privacy";
-import Shop from './Pages/Shops';
+import Mall from './Pages/Mall';
 import "./style.css";
 import "./input.css";
 import "./animation.css";
@@ -30,7 +30,8 @@ function App ()
             <Route path="/blog" element={<SingleBlog />} />
             <Route path="/blog/:id" element={<SingleBlog />} />
             <Route path="/faq" element={<Faq />} />
-            <Route path="/shop" element={<Shop />} />
+            <Route path="/mallsincity" element={<MallsInCity />} />
+            <Route path="/mall" element={<Mall />} />
             <Route path="/privacy-policy" element={<Privacy />} />
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/shopkeeper-login" element={<ShopkeeperLogin />} />
