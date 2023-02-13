@@ -1,5 +1,5 @@
 import React from "react";
-// Import Swiper React components
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -61,18 +61,20 @@ function CitySlideshow() {
                   boxShadow: "10px 20px 30px rgba(0,0,0,0.25)",
                 }}
               >
-                <div className="relative w-full h-full">
-                  <img
-                    src={city.img}
-                    className="w-full h-full object-cover block"
-                    alt="city"
-                  />
-                  <div className="absolute w-full h-[4.5rem] bg-back-overlay bottom-0 left-0 flex justify-center items-center">
-                    <span className="text-white text-4xl font-normal">
-                      {city.name}
-                    </span>
+                <Link to="/shop">
+                  <div className="relative w-full h-full">
+                    <img
+                      src={city.img}
+                      className="w-full h-full object-cover block"
+                      alt="city"
+                    />
+                    <div className="absolute w-full h-[4.5rem] bg-back-overlay bottom-0 left-0 flex justify-center items-center">
+                      <span className="text-white text-4xl font-normal">
+                        {city.name}
+                      </span>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </SwiperSlide>
             );
           })}
