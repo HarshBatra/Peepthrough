@@ -4,6 +4,7 @@ import SingleBlog from "./Pages/SingleBlog";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Faq from "./Pages/Faq";
+import Shop from "./Pages/Shop";
 import ShopkeeperLogin from "./Pages/ShopkeeperLogin";
 import Advertise from "./Pages/Advertise";
 import Privacy from "./Pages/Privacy";
@@ -27,6 +28,7 @@ function App() {
             <Route path="/blog" element={<SingleBlog />} />
             <Route path="/blog/:id" element={<SingleBlog />} />
             <Route path="/faq" element={<Faq />} />
+            <Route path="/shop" element={<Shop />} />
             <Route path="/privacy-policy" element={<Privacy />} />
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/shopkeeper-login" element={<ShopkeeperLogin />} />
