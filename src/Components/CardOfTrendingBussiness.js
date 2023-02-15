@@ -20,7 +20,7 @@ function CardOfTrendingBusiness({ business }) {
           <span className="text-xxs text-light-gray">
             {business.availability}
           </span>
-          <span className="text-xxs text-light-gray">{business.location}</span>
+          <span className="text-xxs text-light-gray">{business.city}</span>
         </div>
         <div>
           <h1 className="text-base text-primary-blue font-semibold mb-2 cursor-pointer" onClick={()=>navigate("/mall")}>

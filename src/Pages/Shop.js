@@ -5,11 +5,11 @@ import { Facebook, Instagram, Twitter } from '@mui/icons-material';
 
 
 const Shop = () => {
-    var shop=ShopData[0];
+  var shop=ShopData[0];
   return (
-    <div className='flex w-screen flex-col align-middle items-center bg-teal-50 mt-7 mb-7 '>
+    <div className='flex w-screen flex-col align-middle items-center bg-teal-50'>
         <div className="head-img">
-            <img className='w-screen h-60' alt="" src={'./Assets/Images/shop_banner.jpg'} />
+            <img className='w-screen h-100' alt="" src={'./Assets/Images/shop_banner.jpg'} />
         </div>
         <div className="flex flex-col mt-5 w-9/12 gap-5  content">
             <div className="flex flex-row contact-card justify-between bg-white">
