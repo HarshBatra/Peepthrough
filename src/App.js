@@ -16,6 +16,7 @@ import Contact from "./Pages/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Allblogs from "./Pages/Allblogs";
 import ScrollToTop from "./Components/ScrollToTop";
+import Shop from "./Pages/Shop";
 
 function App ()
 {
@@ -37,6 +38,7 @@ function App ()
             <Route path="/shopkeeper-login" element={<ShopkeeperLogin />} />
             <Route path="/advertise" element={<Advertise />} />
             <Route path="/all-blogs" element={<Allblogs />} />
+            <Route path="/shop" element={<Shop/>} />
           </Routes>
           <Footer />
         </Router>
