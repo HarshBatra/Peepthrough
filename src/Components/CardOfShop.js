@@ -9,9 +9,8 @@ function CardOfShop({ data }) {
     <div
       key={data.key}
       className="w-72 flex flex-col border tracking-wider rounded-t-[20px] rounded-b-[30px] bg-white drop-shadow-[5px_5px_10px_rgba(0,0,0,0.25)] cursor-pointer"
-      onClick={()=>navigate("/mall")}
     >
-      <div className="rounded-t-[20px]">
+      <div className="rounded-t-[20px] cursor-pointer" onClick={()=>navigate("/shop")}>
         <img src={data.img} className="rounded-t-[20px]" alt="" />
       </div>
       <div className="p-4 rounded-b-[30px]">
@@ -22,7 +21,7 @@ function CardOfShop({ data }) {
           <span className="text-xxs text-light-gray">{data.city}</span>
         </div>
         <div>
-          <h1 className="text-base text-primary-blue font-semibold mb-2">
+          <h1 className="text-base text-primary-blue font-semibold mb-2 cursor-pointer" onClick={()=>navigate("/shop")}>
             {data.name}
           </h1>
           <div className="flex flex-col">
