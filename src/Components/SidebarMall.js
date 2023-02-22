@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Collapse, ListItemText, ListItemButton, List, subheader, ListSubheader } from '@mui/material';
-import { ExpandLess, ExpandMore } from '@mui/icons-material';
+import { ListItemText, ListItemButton, List, ListSubheader } from '@mui/material';
 import SidebarMallData from '../constants/SidebarMallData';
 
 
@@ -13,10 +12,11 @@ function SidebarMall() {
         <List
             sx={{
                 width: '100%',
-                maxWidth: 360,
+                maxWidth: 300,
+                minWidth: 280,
                 bgcolor: 'background.paper',
             }}
-            className='tracking-wider border'
+            className='tracking-wider border h-fit'
             component="nav"
             aria-labelledby="nested-list-subheader"
             subheader={
@@ -30,20 +30,12 @@ function SidebarMall() {
                     <>
                         <ListItemButton onClick={() => setOpen((old)=>old.map((val,i)=>i===idx?!val:val))}>
                             <ListItemText primary={item.category} />
-                            {open[idx] ? <ExpandLess /> : <ExpandMore />}
+                            <span 
+                                className='ml-3 text-[10px] rounded-full bg-gray-400 h-[30px] w-[30px] text-stone-50 flex justify-center items-center'
+                            >
+                                {item.count}
+                            </span>
                         </ListItemButton>
-                        <Collapse in={open[idx]} timeout="auto" unmountOnExit>
-                            {item.shops.map((shop,idx)=>{
-                                return(
-                                    <List component="div" disablePadding key={idx}>
-                                        <ListItemButton sx={{ pl: 4 }}>
-                                            <ListItemText primary={shop} />
-                                        </ListItemButton>
-                                    </List>
-                                )
-                            })
-                            }
-                        </Collapse>
                     </>
                 )
             })

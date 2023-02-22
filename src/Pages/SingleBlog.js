@@ -2,17 +2,19 @@ import React from "react";
 
 const SingleBlog = () => {
   const Images = {
-    banner: "./Assets/Images/BlogPage/SingleBlogBanner.png",
+    banner: "./Assets/Images/BlogPage/SingleBlogBanner_3.jpg",
     User: "./Assets/Images/BlogPage/UserImg.png",
     Like: "./Assets/Images/BlogPage/LikeButton.png",
   };
   return (
     <div>
-      <img
-        src={Images.banner}
-        alt="banner"
-        class="w-full h-full drop-shadow-2xl"
-      />
+      <div className="w-full md:h-[50vh] h-[40vh] mb-10">
+        <img
+          src={Images.banner}
+          alt="banner"
+          class="w-full h-full object-cover drop-shadow-2xl mb-10 md:rounded-[30px] rounded-[20px]"
+        />
+      </div>
       <div class="md:mx-20 mb-20 md:px-20 mx-6">
         <div class="text-lg text-center font-semibold mt-4 text-[#13A89E] tracking-widest leading-6 ">
           ROAD TRIP
@@ -22,8 +24,8 @@ const SingleBlog = () => {
           16 Dec 2022
         </div>
 
-        <div class="font-semibold text-3xl text-center tracking-wider leading-5 mt-6">
-          Lorem Ipsum Topic
+        <div class="font-semibold md:text-3xl text-xl text-center tracking-wider leading-5 mt-6">
+          Lorem Ipsum Topic 
         </div>
 
         <div class="flex flex-row justify-between md:mx-10 mt-6 px-6 items-center  ">

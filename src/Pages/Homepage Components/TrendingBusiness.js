@@ -10,7 +10,7 @@ import TrendingBusinessData from "../../constants/TrendingBusinessData";
 function TrendingBusiness() {
   var businesses = TrendingBusinessData;
   return (
-    <div className="md:my-16 md:mx-14 mx-12 md:px-10 md:py-4">
+    <div className="md:my-16 md:mx-14 mx-4 md:px-10 md:py-4">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-2xl md:text-4xl text-primary-blue tracking-wide text-center md:mb-2">
           <span className="font-bold">Trending</span> Market Places
@@ -28,7 +28,7 @@ function TrendingBusiness() {
         >
           {businesses.map((business) => {
             return (
-              <SwiperSlide key={business.key} className="w-auto py-10 px-2">
+              <SwiperSlide key={business.key} className="w-auto py-10 md:px-2 md:mr-[30px] mr-15px">
                 <CardOfTrendingBusiness business={business} />
               </SwiperSlide>
             );

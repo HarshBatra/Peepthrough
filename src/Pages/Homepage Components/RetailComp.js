@@ -10,8 +10,8 @@ function RetailComp() {
             "radial-gradient(rgba(19, 168, 158, 0.5) 0%, rgba(19, 168, 158, 0.25) 0.01%, rgba(19, 168, 158, 0) 100%)",
         }}
       >
-        <div className="mx-10 items-center flex-col flex">
-          <h1 className="text-center md:mb-16 mb-10">
+        <div className="md:mx-10 items-center flex-col flex">
+          <h1 className="text-center md:mb-16 mb-10 mx-4">
             <span className="text-3xl md:text-4xl text-primary-blue font-bold tracking-wider">
               Retail Shopping{" "}
             </span>{" "}
@@ -20,7 +20,7 @@ function RetailComp() {
               made easy
             </span>
           </h1>
-          <div className="flex md:justify-around w-full md:flex-row flex-col">
+          <div className="flex md:justify-around w-full md:flex-row flex-col items-center">
             <div className="h-auto w-80 relative flex flex-col justify-center items-center">
               <img
                 src="./Assets/Images/data-searching.png"

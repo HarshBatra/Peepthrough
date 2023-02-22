@@ -11,7 +11,7 @@ function BlogSlideShow() {
   return (
     <>
       <div
-        className="my-16 py-16 md:px-28 px-8"
+        className="my-16 py-16 md:px-28 sm:px-8 px-4"
         style={{
           background:
             "radial-gradient(rgba(19, 168, 158, 0.5) 0%, rgba(19, 168, 158, 0.25) 0.01%, rgba(19, 168, 158, 0) 100%)",
@@ -50,7 +50,7 @@ function BlogSlideShow() {
           {slides.map((val) => {
             return (
               <SwiperSlide key={val.key}>
-                <div className="flex flex-col md:flex-row w-full py-16 px-16 tracking-wider justify-center items-center">
+                <div className="flex flex-col md:flex-row w-full py-16 md:px-16 px-10 tracking-wider justify-center items-center">
                   <div className="h-40 w-40 mb-10 shrink-0 overflow-hidden rounded-full drop-shadow flex justify-center items-center relative">
                     <img src={val.img} className="rounded-[50%]" alt="" />
                   </div>
