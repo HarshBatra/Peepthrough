@@ -3,12 +3,12 @@ import { CSSComponents } from './CSSComponents';
 import CancelIcon from '@mui/icons-material/Cancel';
 
 function CardOfUsersLogin({setOpen}) {
-    const [isReg, setIsReg] = useState(false);
+    const [isLog, setIsLog] = useState(true);
     return (
         <div className='relative'>
             <span className='flex absolute right-6 top-2 text-black cursor-pointer' onClick={()=>setOpen(false)}><CancelIcon /></span>
-                {isReg ? (
-                <div className='md:w-[25rem] px-14 py-16 rounded-[20px] bg-white text-black mx-4 w-80' 
+                {isLog ? (
+                <div className='md:w-[25rem] px-14 py-16 rounded-[20px] bg-white text-black mx-4 w-90 max-[375px]:w-80' 
                 style={{
                     boxShadow: "5px 5px 20px 2px #00000040"
                  }}>
@@ -24,12 +24,12 @@ function CardOfUsersLogin({setOpen}) {
                     </div>
                     <button className={`${CSSComponents.roundButtonBlue} drop-shadow-[5px_5px_20px_rgba(0,0,0,0.25)] mt-9`}>Login</button>
                     <span className='text-sm mt-6 text-center'>Create an account?
-                        <span className='font-semibold text-primary-blue cursor-pointer' onClick={()=>setIsReg(!isReg)}> Register</span>
+                        <span className='font-semibold text-primary-blue cursor-pointer' onClick={()=>setIsLog(!isLog)}> Register</span>
                     </span>
                 </div>
                 </div>) :
                 (
-                <div className='md:w-[30rem] px-14 py-16 rounded-[20px] bg-white text-black mx-4 w-80' 
+                <div className='md:w-[30rem] px-14 py-16 rounded-[20px] bg-white text-black mx-4 w-90 max-[375px]:w-80' 
                 style={{
                     boxShadow: "5px 5px 20px 2px #00000040"
                  }}>
@@ -53,7 +53,7 @@ function CardOfUsersLogin({setOpen}) {
                     </div>
                     <button className={`${CSSComponents.roundButtonBlue} drop-shadow-[5px_5px_20px_rgba(0,0,0,0.25)] mt-9`}>Register</button>
                     <span className='text-sm mt-6 text-center'>Already has an account?
-                        <span className='font-semibold text-primary-blue cursor-pointer' onClick={()=>setIsReg(!isReg)}> Login</span>
+                        <span className='font-semibold text-primary-blue cursor-pointer' onClick={()=>setIsLog(!isLog)}> Login</span>
                     </span>
                 </div>
                 </div>)}
