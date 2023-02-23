@@ -18,9 +18,12 @@ function IntroComp() {
         </div>
       </div>
       <div className='relative block mx-auto tracking-wider rounded-2xl md:w-2/3 w-full md:mt-auto mt-8' style={{boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px"}}>
-        <input type="text" placeholder='Search by Name, City, or Category' className='border w-full rounded-2xl h-10 placeholder:text-xs placeholder:tracking-wider pl-4 outline-none pr-[155px]' />
+        <input type="text" placeholder='Search by Name, City, or Category' className='border w-full rounded-2xl h-10 md:placeholder:text-xs placeholder:text-xxs placeholder:tracking-wider pl-4 outline-none md:pr-[155px] pr-[90px]' />
         <button className={`${CSSComponents.roundButtonBlue} md:px-8 px-6 py-[4px] md:text-sm text-[12px] font-medium absolute right-2 
-         top-1/2 -translate-y-1/2 tracking-wider`} style={{boxShadow: "0px 4px 4px 0px #00000040"}}><SearchIcon/>Search</button>
+         top-1/2 -translate-y-1/2 tracking-wider`} style={{boxShadow: "0px 4px 4px 0px #00000040"}}>
+          <SearchIcon/>
+          <span className='hidden md:inline'>Search</span>
+        </button>
       </div>
     </div>
   );
