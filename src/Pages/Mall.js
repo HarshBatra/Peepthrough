@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import CardOfShop from "../Components/CardOfShop"
 import DrawerForMallSidebar from '../Components/DrawerForMallSidebar';
 
@@ -33,8 +33,14 @@ const Mall = () =>
                         keyboard={ true }
                         slidesPerView={ "auto" }
                         spaceBetween={ 40 }
-                        modules={ [ Navigation, Pagination, Mousewheel, Keyboard ] }
+                        modules={ [ Autoplay, Navigation, Pagination, Mousewheel, Keyboard ] }
                         className="mySwiper"
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={true}
+                        loop={true}
                     >
 
                         { imgData.map( ( img_src ) =>
