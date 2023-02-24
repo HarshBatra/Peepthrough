@@ -19,7 +19,7 @@ function CitySlideshow() {
 
   return (
     <>
-      <div className="md:my-16 my-12 md:py-16 py-10 px-6" id="cities">
+      <div className="md:my-16 my-12 md:py-16 py-10 md:px-6" id="cities">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-2xl md:text-4xl text-primary-blue tracking-wide text-center ">
             <span className="font-bold">Featured</span> Cities
@@ -56,7 +56,7 @@ function CitySlideshow() {
             return (
               <SwiperSlide
                 key={index}
-                className="md:w-[545px] md:h-[340px] w-[375px] h-[250px] p-2 bg-white mb-16"
+                className="sm:w-[375px] sm:h-[250px] md:w-[545px] md:h-[340px] w-[325px] h-[225px] p-2 bg-white mb-16"
                 style={{
                   boxShadow: "10px 20px 30px rgba(0,0,0,0.25)",
                 }}
@@ -68,8 +68,8 @@ function CitySlideshow() {
                       className="w-full h-full object-cover block"
                       alt="city"
                     />
-                    <div className="absolute w-full h-[4.5rem] bg-back-overlay bottom-0 left-0 flex justify-center items-center">
-                      <span className="text-white text-4xl font-normal">
+                    <div className="absolute w-full md:h-[4.5rem] h-[3rem] bg-back-overlay bottom-0 left-0 flex justify-center items-center">
+                      <span className="text-white md:text-4xl text-2xl font-normal">
                         {city.name}
                       </span>
                     </div>

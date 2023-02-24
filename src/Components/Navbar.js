@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import DrawerComp from "./DrawerComp"
+import DrawerCompForNavbar from "./DrawerCompForNavbar"
 import { useNavigate } from "react-router-dom";
 import CardOfUsersLogin from "./CardOfUsersLogin"
 import { Backdrop } from '@mui/material';
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <div className="ellipse-2 absolute w-[250px] h-[250px] top-[4.5rem] right-[-4rem] rounded-full bg-gradient-to-bl from-teal-500 z-30"></div>          
             </div>
         </div>
-        <DrawerComp setOpen={setOpen} />
+        <DrawerCompForNavbar setOpen={setOpen} />
         <Backdrop
           sx={{ color: '#fff', zIndex: 100}}
           open={open}
